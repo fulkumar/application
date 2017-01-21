@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="14F1605" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+    </dependencies>
+    <scenes>
+        <!--スタート画面-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" userLabel="スタート画面" customClass="ViewController" customModule="ChatApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DJU-ex-DYM">
+                                <rect key="frame" x="100" y="225" width="120" height="30"/>
+                                <state key="normal" title="チャットを始める"/>
+                                <connections>
+                                    <segue destination="nD0-t3-QmB" kind="presentation" id="gUX-MJ-5Ps"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="C4Y-eI-0Q6">
+                                <rect key="frame" x="138" y="298" width="45" height="30"/>
+                                <state key="normal" title="使い方"/>
+                                <connections>
+                                    <segue destination="zcm-0i-Fqo" kind="presentation" id="eL2-dt-57r"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="チャットアプリ" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LX4-9M-YdA">
+                                <rect key="frame" x="101" y="48" width="119" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="320" height="480"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="205" y="469"/>
+        </scene>
+        <!--使い方画面-->
+        <scene sceneID="gt7-6t-1QX">
+            <objects>
+                <viewController id="zcm-0i-Fqo" userLabel="使い方画面" customClass="ViewController" customModule="ChatApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="h16-dK-oyG"/>
+                        <viewControllerLayoutGuide type="bottom" id="ODR-jG-G1v"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="yxC-lh-eMF">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="cFW-FI-Axc">
+                                <rect key="frame" x="0.0" y="86" width="320" height="394"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <string key="text">チャットをするアプリです。
+
+スタート画面で「チャットを始める」からチャット画面に移動できます。</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="アプリの使い方" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="J1Y-gF-4ca">
+                                <rect key="frame" x="72" y="33" width="177" height="38"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mzk-Ua-cR1">
+                                <rect key="frame" x="1" y="20" width="45" height="30"/>
+                                <state key="normal" title="閉じる"/>
+                                <connections>
+                                    <segue destination="z3d-Dv-rA4" kind="unwind" unwindAction="firstViewReturnActionForSegue:" id="Pc7-Kj-w4O"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="320" height="480"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zub-kx-s1d" sceneMemberID="firstResponder"/>
+                <exit id="z3d-Dv-rA4" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="205" y="1118"/>
+        </scene>
+        <!--チャット画面-->
+        <scene sceneID="kUs-lA-q9i">
+            <objects>
+                <viewController id="nD0-t3-QmB" userLabel="チャット画面" customClass="ChatViewController" customModule="ChatApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="oMX-gb-JQG"/>
+                        <viewControllerLayoutGuide type="bottom" id="P8K-e6-hai"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="1tR-Dx-wOn">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="tWc-Hj-qGz">
+                                <rect key="frame" x="0.0" y="442" width="233" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <outlet property="delegate" destination="nD0-t3-QmB" id="CjZ-rY-Teg"/>
+                                </connections>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Q0A-aD-k1L">
+                                <rect key="frame" x="262" y="442" width="30" height="30"/>
+                                <state key="normal" title="送信"/>
+                                <connections>
+                                    <action selector="didTapSendButton:" destination="nD0-t3-QmB" eventType="touchUpInside" id="ksA-HA-wXJ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xQR-d5-DNH">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                                <state key="normal" title="閉じる"/>
+                                <connections>
+                                    <segue destination="XHT-Cf-K6d" kind="unwind" unwindAction="firstViewReturnActionForSegue:" id="APO-KO-f6Q"/>
+                                </connections>
+                            </button>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="wDY-SZ-aq1">
+                                <rect key="frame" x="0.0" y="52" width="320" height="366"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="nD0-t3-QmB" id="cdH-Ot-pzE"/>
+                                    <outlet property="delegate" destination="nD0-t3-QmB" id="BB8-cD-VCb"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="320" height="480"/>
+                    <connections>
+                        <outlet property="sendButton" destination="Q0A-aD-k1L" id="SAw-DW-W5M"/>
+                        <outlet property="tableView" destination="wDY-SZ-aq1" id="ng3-dy-fzS"/>
+                        <outlet property="textField" destination="tWc-Hj-qGz" id="cHK-3W-Rrb"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="47J-Oi-hhU" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="XHT-Cf-K6d" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="631" y="469"/>
+        </scene>
+    </scenes>
+</document>
